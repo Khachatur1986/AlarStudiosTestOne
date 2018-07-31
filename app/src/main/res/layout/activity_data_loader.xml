@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#489312"
+    tools:context="example.am.alarstudiostestone.views.impl.DataLoaderActivity">
+
+    <ProgressBar
+        android:id="@+id/pb_data_loading"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lv_data_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#b7e1c7"
+        android:divider="#999999"
+        android:dividerHeight="10dp">
+
+    </ListView>
+</LinearLayout>
