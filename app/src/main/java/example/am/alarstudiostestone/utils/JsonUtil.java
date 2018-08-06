@@ -45,11 +45,11 @@ public final class JsonUtil {
                 JSONObject dataObj = (JSONObject) jsonArray.get(i);
                 Data data = new Data();
                 data.setImageResourceId(android.R.drawable.btn_star_big_on);
-                data.setId("ID: " + dataObj.getString("id"));
-                data.setLon("Lon: " + dataObj.getString("lon"));
-                data.setLat("Lat: "+ dataObj.getString("lat"));
-                data.setCountry("Country: " + dataObj.getString("country"));
-                data.setName("Name: " + dataObj.getString("name"));
+                data.setId(dataObj.getString("id"));
+                data.setLon(dataObj.getString("lon"));
+                data.setLat(dataObj.getString("lat"));
+                data.setCountry(dataObj.getString("country"));
+                data.setName(dataObj.getString("name"));
                 dataArrayList.add(data);
             } catch (JSONException e) {
                 e.printStackTrace();
